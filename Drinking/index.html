@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Time to DRINK!!!</title>
+    <style>
+    
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; 
+            overflow: hidden; 
+            font-family: Arial, sans-serif;
+        }
+
+
+        video {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            color: white;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /
+            text-align: center;
+            font-size: 48px;
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+
+    <video autoplay muted loop>
+        <source src="Happy Hour.mp4" type="video/mp4">
+    </video>
+
+  
+    <div class="text">
+        <p>It's Time To DRINK!!!</p>
+    </div>
+
+    <script>
+      
+        document.querySelector('.text').addEventListener('click', function() {
+            window.location.href = 'Nextpage.html';
+        });
+    </script>
+
+</body>
+</html>
